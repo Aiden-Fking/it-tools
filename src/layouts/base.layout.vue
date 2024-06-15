@@ -63,27 +63,27 @@ const tools = computed<ToolCategory[]>(() => [
           <div>
             IT-Tools
 
-            <c-link target="_blank" rel="noopener" :href="`https://github.com/CorentinTh/it-tools/tree/v${version}`">
+            <!-- <c-link target="_blank" rel="noopener" :href="`https://github.com/CorentinTh/it-tools/tree/v${version}`">
               v{{ version }}
-            </c-link>
+            </c-link> -->
 
             <template v-if="commitSha && commitSha.length > 0">
               -
-              <c-link
+              <!-- <c-link
                 target="_blank"
                 rel="noopener"
                 type="primary"
                 :href="`https://github.com/CorentinTh/it-tools/tree/${commitSha}`"
-              >
+              > -->
                 {{ commitSha }}
-              </c-link>
+              <!-- </c-link> -->
             </template>
           </div>
           <div>
             © {{ new Date().getFullYear() }}
-            <c-link target="_blank" rel="noopener" href="https://github.com/CorentinTh">
+            <!-- <c-link target="_blank" rel="noopener" href="https://github.com/CorentinTh">
               Corentin Thomasset
-            </c-link>
+            </c-link> -->
           </div>
         </div>
       </div>
